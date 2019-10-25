@@ -3,9 +3,11 @@ class Bird {
   float dy, ddy; // Fuglens hastighed og acceleration
   float s; // Fuglens størrelse
   boolean ready2flap;
+  PImage bird;
 
   // Constructor til nye fugle
   Bird() {
+    bird = loadImage("bluebird-upflap.png");
     x = 150;
     y = height/2;
     dy = 0;
